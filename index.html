@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto integrador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animaciones.css">
+    <script src="https://kit.fontawesome.com/ce1512baf8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- NAVBAR -->
+<header class="header" style="z-index: 3;">
+    <a href="index.html"> <img src="Imagenes/logo.png" class="navbar-img"> </a>
+    <nav class="navbar">
+        <input type="checkbox" id="toggle-menu">
+
+        <label for="toggle-menu" class="bars-menu" style="cursor: pointer;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul class="navbar-list">
+            <li> <a href="#portada" class="etiquetas-navbar"><b>INICIO</b></a> </li>
+            <div class="dropdown">
+                <button class="btn-dropdown"> <span class="btn-text">PRENDAS EN STOCK </span></button>
+                <div class="dropdown-content">
+                <a href="#camperas">CAMPERAS</a>
+                <a href="#buzos">BUZOS</a>
+                <a href="#camisetas">CAMISETAS</a>
+                <a href="#chombas">CHOMBAS</a>
+                <a href="#pantalones">PANTALONES</a>
+                <a href="#accesorios">ACCESORIOS</a>
+                </div>
+              </div>
+            <li> <a href="#contactos" class="etiquetas-navbar"><b>CONTACTO</b></a> </li>
+
+            <div class="dropdown">
+                <button class="btn-dropdown"> <span class="btn-register"><i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i></span></button>
+                <div class="dropdown-content">
+                    <a href="login.html">INICIAR SESION</a>
+                    <a href="registro.html">REGISTRARSE</a>
+                </div>
+              </div>
+        </ul>
+
+        <!-- CARRITO -->
+        <label for="cart-toggle" class="cart-label">
+          <i class="fa-solid fa-cart-shopping cart-icon" style="color: #ffffff; cursor: pointer; position: absolute; right: 30px; top: 37px;"></i>
+        </label>
+
+      </label>
+      <input type="checkbox" id="cart-toggle" />
+      
+      <div class="cart">
+        <h2>RESUMEN DE COMPRA</h2>
+
+        <div class="cart-item">
+          <img src="Imagenes/Camiseta Nike New York Yankees Blanca.png" alt="Camiseta Nike New York" />
+          <div class="item-info">
+            <h3 class="item-title">NIKE NEW YORK </h3>
+            <span class="item-price">9.000 ARS</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="Imagenes/camiseta san lorenzo.webp" alt="Camiseta San lorenzo" />
+          <div class="item-info">
+            <h3 class="item-title">SAN LORENZO 2011</h3>
+            <span class="item-price">6.500 ARS</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="Imagenes/campera kappa.webp" alt="Campera Kappa" />
+          <div class="item-info">
+            <h3 class="item-title">CAMPERA KAPPA</h3>
+            <span class="item-price">15.000 ARS</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="Imagenes/riñonera nike.png" alt="Riñonera Nike" />
+          <div class="item-info">
+            <h3 class="item-title">RIÑONERA NIKE</h3>
+            <span class="item-price">7.000 ARS</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="Imagenes/short de futbol adidas.png" alt="Nft del carrito" />
+          <div class="item-info">
+            <h3 class="item-title">SHORT ADIDAS</h3>
+            <span class="item-price">6.500 ARS</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <span class="divider"></span>
+
+        <div class="cart-total">
+          <p>Total:</p>
+          <span>44.000 ARS</span>
+        </div>
+        <button class="btn-add">Comprar</button>
+      </div>
+    </nav>
+</header>
+
+<!-- PORTADA -->
+
+<section id="portada">
+    <div class="container-portada">
+        <div class="text-portada">
+            <h1><i>BlackCrow</i></h1>
+            <p style="z-index: 1;">Somos una tienda online dedicada a la venta de ropa Nueva y Usada, que tiene el objetivo de lograr en la gente un sistema circular de ropero a ropero, cambiando las prendas de nuestro ropero y el de ustedes.
+        </div> 
+    </div>
+</section>
+
+<!-- ABOUT US -->
+<section id="about-us">
+  <div class="container-about" style="z-index: 2;">
+      <div class="card-about">
+        <h3>ENVIOS</h3>
+        <i class="fa-solid fa-truck-fast" style="position: relative; left: 40%; font-size: 50px; padding-bottom: 20px;"></i>
+        <p>Envios a todo el pais</p>
+        <p>Envios a traves de correo Argentino</p>
+      </div>
+
+      <div class="card-about">
+        <h3>METODOS DE PAGO</h3>
+        <i class="fa-solid fa-money-check-dollar" style="position: relative; left: 40%; font-size: 50px; padding-bottom: 20px;"></i>
+        <p>transferencia</p>
+        <p>Mercado pago</p>
+        <p>Efectivo</p>
+      </div>
+
+      <div class="card-about">
+        <h3>RESERVAS</h3>
+        <i class="fa-solid fa-calendar-check" style="position: relative; left: 43%; font-size: 50px; padding-bottom: 20px;"></i>
+        <p>Se abona un minimo del 30% de la prenda</p>
+        <p>Duracion de la reserva 3 Dias</p>
+        <p>No se hace devolucion del dinero</p>
+      </div>
+  </div>
+</section>
+<!-- PRODUCTOS -->
+
+<section id="productos">
+<!-- CAMPERAS -->
+    <h2 id="camperas">CAMPERAS</h2>
+
+    <div class="container-productos">
+        <div class="producto">
+            <img src="Imagenes/campera kappa.webp" style="width: 230px; height: 230px;">
+            <br>
+            <br>
+            <h4>CAMPERA KAPPA</h4> 
+        <br>
+            <P>ESTADO: Nuevo con etiqueta</P> 
+            <P>TALLE: XL</P> 
+            <p>$ 15.000</p> 
+        <br>
+            <button>Agregar al carrito</button>
+          </div>
+        <div class="producto">
+            <img src="Imagenes/campera nike.png" style="width: 200px; height: 250px;">
+            <h4>CAMPERA NIKE</h4> 
+        <br>
+            <P>ESTADO: Como nuevo </P> 
+            <P>TALLE: S</P> 
+            <p>$ 17.000</p> 
+        <br>
+            <button>Agregar al carrito</button>
+          </div> 
+
+          <div class="producto">
+            <img src="Imagenes/rompeviento negro y blanco.png" style="width: 200px; height: 250px;">
+            <h4>CAMPERA ROMPEVIETNO</h4> 
+        <br>
+            <P>ESTADO: Como nuevo</P> 
+            <P>TALLE: M</P> 
+            <p>$ 8.000</p> 
+        <br>
+            <button>Agregar al carrito</button>
+          </div>
+    </div>
+
+<!-- BUZOS -->
+<h2 id="buzos">BUZOS</h2>
+
+<div class="container-productos">
+    <div class="producto">
+        <img src="Imagenes/buzo Desing art.webp" style="width: 230px; height: 230px;">
+        <br>
+        <br>
+        <h4>BUZO DESING ART</h4> 
+    <br>
+        <P>ESTADO: Como nuevo </P> 
+        <P>TALLE: L</P> 
+        <p>$ 8.000</p> 
+    <br>
+        <button>Agregar al carrito</button>
+      </div>
+    <div class="producto">
+        <img src="Imagenes/buzo cuerdos.png" style="width: 200px; height: 250px;">
+        <h4>BUZO CUERDOS</h4> 
+    <br>
+        <P>ESTADO: Como nuevo </P> 
+        <P>TALLE: L</P> 
+        <p>$ 9.000</p> 
+    <br>
+        <button>Agregar al carrito</button>
+      </div> 
+
+      <div class="producto">
+        <img src="Imagenes/buzo circa.png" style="width: 230px; height: 230px;">
+        <br>
+        <br>
+        <h4>BUZO CIRCA</h4> 
+    <br>
+        <P>ESTADO: Como nuevo</P> 
+        <P>TALLE: XL</P> 
+        <p>$ 6.500</p> 
+    <br>
+        <button>Agregar al carrito</button>
+      </div>
+</div>
+
+<!-- CAMISETAS -->
+<h2 id="camisetas">CAMISETAS</h2>
+
+<div class="container-productos">
+    <div class="producto">
+        <img src="Imagenes/camiseta puma.png" style="width: 200px; height: 250px;">
+        <h4>CAMISETA PUMA MANGA LARGA</h4> 
+    <br>
+        <P>ESTADO: Como nuevo </P> 
+        <P>TALLE: M</P> 
+        <p>$ 5.000</p> 
+    <br>
+        <button>Agregar al carrito</button>
+      </div>
+    <div class="producto">
+        <img src="Imagenes/Camiseta Nike New York Yankees Blanca.png" style="width: 230px; height: 230px;">
+        <br>
+        <br>
+        <h4>CAMISETA NIKE NEW YORKS</h4> 
+    <br>
+        <P>ESTADO: Como nuevo </P> 
+        <P>TALLE: L</P> 
+        <p>$ 9.000</p> 
+    <br>
+        <button>Agregar al carrito</button>
+      </div> 
+
+      <div class="producto">
+        <img src="Imagenes/camiseta san lorenzo.webp" style="width: 230px; height: 230px;">
+        <br>
+        <br>
+        <h4>CAMISETA DE SAN LORENZO AÑO 2011</h4> 
+    <br>
+        <P>ESTADO: Usada / buen estado</P> 
+        <P>TALLE: XL</P> 
+        <p>$ 6.500</p> 
+    <br>
+        <button>Agregar al carrito</button>
+      </div>
+</div>
+
+<!-- CHOMBAS -->
+<h2 id="chombas">CHOMBAS</h2>
+
+<div class="container-productos">
+    <div class="producto">
+        <img src="Imagenes/chomba nike.jpg" style="width: 230px; height: 250px;">
+        <h4>CHOMBA NIKE</h4> 
+    <br>
+        <P>ESTADO: Como nuevo </P> 
+        <P>TALLE: M</P> 
+        <p>$ 7.500</p> 
+    <br>
+        <button>Agregar al carrito</button>
+      </div>
+    <div class="producto">
+        <img src="Imagenes/chomba lacoste.png" style="width: 230px; height: 230px;">
+        <br>
+        <br>
+        <h4>CHOMBA LACOSTE</h4> 
+    <br>
+        <P>ESTADO: Como nuevo </P> 
+        <P>TALLE: L</P> 
+        <p>$ 9.000</p> 
+    <br>
+        <button>Agregar al carrito</button>
+      </div> 
+
+      <div class="producto">
+        <img src="Imagenes/Chomba O'neill Jack Utility.png" style="width: 200px; height: 250px;">
+        <h4>CHOMBA O'NEILL</h4> 
+    <br>
+        <P>ESTADO: Usada / buen estado</P> 
+        <P>TALLE: M</P> 
+        <p>$ 6.500</p> 
+    <br>
+        <button>Agregar al carrito</button>
+      </div>
+</div>
+
+<!-- PANTALONES -->
+<h2 id="pantalones">PANTALONES</h2>
+
+<div class="container-productos">
+    <div class="producto">
+        <img src="Imagenes/joggin enlighted.webp" style="width: 230px; height: 250px;">
+        <h4>JOGGIN ENLIGHTED</h4> 
+    <br>
+        <P>ESTADO: Usado / Casi nuevo </P> 
+        <P>TALLE: M</P> 
+        <p>$ 5.500</p> 
+    <br>
+        <button>Agregar al carrito</button>
+      </div>
+    <div class="producto">
+        <img src="Imagenes/pantalon cargo fifty fifty.png" style="width: 230px; height: 230px;">
+        <br>
+        <br>
+        <h4>PANTALON CARGO FIFTY FIFTY</h4> 
+    <br>
+        <P>ESTADO: Nuevo con etiqueta </P> 
+        <P>TALLE: L</P> 
+        <p>$ 9.000</p> 
+    <br>
+        <button>Agregar al carrito</button>
+      </div> 
+
+      <div class="producto">
+        <img src="Imagenes/short de futbol adidas.png" style="width: 200px; height: 250px;">
+        <h4>SHORT ADIDAS</h4> 
+    <br>
+        <P>ESTADO: Usado / Casi nuevo</P> 
+        <P>TALLE: M</P> 
+        <p>$ 6.500</p> 
+    <br>
+        <button>Agregar al carrito</button>
+      </div>
+</div>
+
+<!-- ACCESORIOS -->
+<h2 id="accesorios">ACCESORIOS</h2>
+
+<div class="container-productos">
+    <div class="producto">
+        <img src="Imagenes/gorra bulls.png" style="width: 200px; height: 200px; margin-bottom: 50px;">
+        <h4>GORRA BULLS</h4> 
+    <br>
+        <P>ESTADO: Usado / Casi nuevo </P> 
+        <P>TALLE: Modificable</P> 
+        <p>$ 5.500</p> 
+    <br>
+        <button>Agregar al carrito</button>
+      </div>
+    <div class="producto">
+        <img src="Imagenes/riñonera nike.png" style="width: 200px; height: 200px;"> 
+        <br>
+        <h4>RIÑONERA NIKE</h4> 
+    <br>
+        <P>ESTADO: Como nuevo</P> 
+        <P>TALLE: Modificable</P> 
+        <p>$ 7.000</p> 
+    <br>
+    <br>
+    <br>
+        <button>Agregar al carrito</button>
+      </div> 
+
+      <div class="producto">
+        <img src="Imagenes/gorra adidas.png" style="width: 200px; height: 250px;">
+        <h4>GORRA ADIDAS</h4> 
+    <br>
+        <P>ESTADO: Como nuevo</P> 
+        <P>TALLE: Modificable</P> 
+        <p>$ 5.500</p> 
+    <br>
+        <button>Agregar al carrito</button>
+      </div>
+</div>
+</section>
+
+<!-- CONTACTOS -->
+
+<section id="contactos">
+    <h2>CONTACTOS</h2>
+    <div class="container-contact">
+        <div class="text-contact">
+            <p><i class="fa-solid fa-envelope"></i> blackcrow@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +542262507820</p>
+            <p><i class="fa-solid fa-location-dot"></i> Diagonal San Martin 1170</p>
+        </div> 
+
+        <div class="mapa">
+            <iframe id="inlineFrameExample" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.4826163510947!2d-58.73175702308219!3d-38.56873267756395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958f97fbae67a21d%3A0x3eb1d889454604b0!2sDiag.%20San%20Mart%C3%ADn%201170%2C%20B7630%20Necochea%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1686510354172!5m2!1ses-419!2sar"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER-->
+
+<footer>
+    <div class="container-footer">
+        <div class="footer-politicas">
+            <h3>INFORMACION</h3> <br>
+            
+            <a href="#">Politicas de Cookies</a> <br><br>
+            <a href="#">Politica de Privacidad</a> <br><br>
+            <a href="#">Terminos y condiciones</a> <br><br>
+            <a href="#">Informacion de envios</a> <br><br>
+            <a href="#">Reclamos</a> 
+        </div>
+
+        <div class="text-footer-information">
+            <h3>ACERCA DE <i>BlackCrow</i></h3>
+            <br>
+                <a href="#">Nostros</a> <br><br>
+                <a href="#">Ayuda</a> <br><br>
+                <a href="#">Novedades</a> <br><br>
+                <a href="#">Nuestros Datos</a>  
+        </div>
+
+        <div class="text-footer-redes">
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/blackcrow.vtg/" target="_blank"><p><i class="fa-brands fa-instagram" ></i></p></a>
+                <a href="https://www.facebook.com/groups/1042787932913597" target="_blank"><p><i class="fa-brands fa-facebook" ></i></p></a>
+                <a href="https://www.tiktok.com/@miguelcuervo20" target="_blank"><p><i class="fa-brands fa-tiktok" ></i></p></a>
+            </div>
+        </div>
+    </div>
+<br>
+    <hr>
+<br>
+    <div class="footer-info">
+        <p>© 2023 BlackCrow</p>
+        <p>Desarrollado por Mikel Marmol</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+/* SCROLL BEHAVIOR SMOOTH + SCROLL PADDING TOP */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+/* hover en las etiquetas a del navbar */
+
+.navbar-list li {
+    position: relative;
+    padding: 0;
+}
+
+.navbar-list li a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+}
+
+.navbar-list li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+/* hover botones de agregar al carrito */
+
+.producto button {
+    transition: all 0.2s ease-out;
+}
+
+.producto button:hover {
+    background-color:  rgb(10, 10, 10);
+    color: white;
+    font-weight: 700;
+    transition: all 0.2 ease-out;
+}
+
+.btn-add {
+    transition: all 0.2s ease-out;
+}
+
+.btn-add:hover {
+    background-color:  rgb(10, 10, 10);
+    color: white;
+    font-weight: 700;
+    transition: all 0.2 ease-out;
+}
+
+/* entrada de los elementos */
+
+/* animacion fade */
+
+@keyframes fade {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* entrada de los elementos hacia arriba*/
+
+@keyframes slide-up {
+    from {
+        transform: translateY(130px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* entrada de los elementos hacia la derecha */
+
+@keyframes slide-right {
+    from {
+        transform: translateX(500px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* entrada de los elementos hacia la izquierda */
+
+@keyframes slide-left {
+    from {
+        transform: translateX(500px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.text-portada h1 {
+    animation: fade 1s ease-in, slide-right 1s ease-in-out;
+}
+
+.text-portada p {
+    animation: fade 1s ease-in, slide-up 1s ease-in-out;
+    z-index: 1;
+}
+
+.producto {
+    transition: 0.1s ease-out;
+    transition-delay: 0.1s;
+}
+
+.producto:hover {
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+
+}
+
+.footer-icons :hover {
+    color: rgb(185, 185, 185);
+}
+
+
+/* hover botones de pagina login y registro */
+
+.btn-card-submit {
+    transition: all 0.2s ease-out;
+}
+
+.btn-card-submit:hover {
+    background-color:  rgb(10, 10, 10);
+    color: white;
+    font-weight: 700;
+    transition: all 0.2 ease-out;
+}
+
+/* hover en las etiquetas del navbar de pagina login y registro */
+
+.login-navbar-list li {
+    position: relative;
+    padding: 0;
+}
+
+.login-navbar-list li a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+}
+
+.login-navbar-list li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+
